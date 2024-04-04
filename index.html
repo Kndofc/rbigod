@@ -22,6 +22,7 @@
             background-color: #ffffff;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             border-radius: 8px;
+            position: relative; /* Adicionado para suportar posicionamento do subtítulo */
         }
         h1 {
             color: #007BFF;
@@ -41,13 +42,20 @@
         .btn:hover {
             background-color: #0056b3;
         }
+        .subtle { /* Estilo para o texto subliminar */
+            font-size: 0.8em;
+            color: #666;
+            margin-top: 30px; /* Ajuste conforme necessário */
+            opacity: 0.7; /* Torna o texto menos proeminente */
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Salve!</h1>
-        <p>Falta só um site para o marketplace, em? (ou quem sabe até um app)</p>
+        <p>Falta só um site para o marketplace, em?</p>
         <a href="https://api.whatsapp.com/send?phone=5511962114156" class="btn">Chega junto!</a>
+        <div class="subtle">Ou quem sabe até um app...</div> <!-- Posicionado de forma mais subliminar -->
     </div>
 </body>
 </html>
